@@ -149,8 +149,73 @@ app.get("/division", (req,res)=>{
       res.status(500).json({statuscocde:500, msg: error.toString() })
     }
 });
+//square root
+app.get("/squareroot", (req,res)=>{
+  try{
+  const n1 = parseFloat(req.query.n1);
 
+  if(isNaN(n1)) {
+      logger.error("n1 is incorrectly defined");
+      throw new Error("n1 incorrectly defined");
+  }
+ 
+  
+ 
+  logger.info('Parameters '+n1+' received for square root');
+  const result = Math.sqrt(n1);
+  res.status(200).json({statuscocde:200, data: result }); 
+  } catch(error) { 
+      console.error(error)
+      res.status(500).json({statuscocde:500, msg: error.toString() })
+    }
+});
+//exponentiation
+app.get("/exponentiation", (req,res)=>{
+  try{
+  const n1 = parseFloat(req.query.n1);
 
+  if(isNaN(n1)) {
+      logger.error("n1 is incorrectly defined");
+      throw new Error("n1 incorrectly defined");
+  }
+ 
+ 
+  logger.info('Parameters '+n1+' received for exponentiation');
+  const result = Math.exp(n1);
+  res.status(200).json({statuscocde:200, data: result }); 
+  } catch(error) { 
+      console.error(error)
+      res.status(500).json({statuscocde:500, msg: error.toString() })
+    }
+});
+//modulooperation
+app.get("/modulo", (req,res)=>{
+  try{
+  const n1 = parseFloat(req.query.n1);
+  const n2 = parseFloat(req.query.n2);
+  if(isNaN(n1)) {
+      logger.error("n1 is incorrectly defined");
+      throw new Error("n1 incorrectly defined");
+  }
+  if(isNaN(n2)) {
+      logger.error("n2 is incorrectly defined");
+      throw new Error("n2 incorrectly defined");
+  }
+  
+ 
+  logger.info('Parameters '+n1+' and '+n2+' received for modulation');
+  const result = n1%n2;
+  res.status(200).json({statuscocde:200, data: result }); 
+  } catch(error) { 
+      console.error(error)
+      res.status(500).json({statuscocde:500, msg: error.toString() })
+    }
+});
+app.post('/profile', passport.authenticate('jwt', { session: false }),
+    function(req, res) {
+        res.send(req.user.profile);
+    }
+);
 
 var port = process.env.port || 4000;
 

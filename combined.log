@@ -4,3 +4,19 @@
 {"level":"info","message":"Parameters 10 and 20 received for addition","service":"calculate-service"}
 {"level":"info","message":"Parameters 18 and 20 received for addition","service":"calculate-service"}
 {"level":"info","message":"Parameters 10 and 20 received for addition","service":"calculate-service"}
+{"level":"info","message":"Parameters 10 and 20 received for addition","service":"calculate-service"}
+{"level":"info","message":"Parameters 10 and 20 received for addition","service":"calculate-service"}
+{"level":"info","message":"Parameters 10 and 20 received for addition","service":"calculate-service"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculate-service"}
+{"level":"info","message":"Parameters 16 received for square root","service":"calculate-service"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculate-service"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculate-service"}
+{"level":"info","message":"Parameters 16 received for square root","service":"calculate-service"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculate-service"}
+{"level":"error","message":"n1 is incorrectly defined","service":"calculate-service"}
+{"level":"info","message":"Parameters 4 received for exponentiation","service":"calculate-service"}
+{"level":"info","message":"Parameters 6 received for exponentiation","service":"calculate-service"}
+{"level":"info","message":"Parameters 6 received for exponentiation","service":"calculate-service"}
+{"level":"error","message":"n2 is incorrectly defined","service":"calculate-service"}
+{"level":"info","message":"Parameters 10 and 3 received for modulation","service":"calculate-service"}
+{"level":"info","message":"Parameters 10 and 3 received for modulation","service":"calculate-service"}
